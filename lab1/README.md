@@ -18,3 +18,8 @@ Here is the order:
 + _parent_ : read byte, print `<pid>: received pong`
 
 Your solution should be in the file `user/pingpong.c`
+
+## primes (moderate/hard)
+Write a concurrent version of prime sieve using pipes
+This idea is dut to Doug Mcllroy, inventor of Unix pipes, the explaination are from *[Here](https://swtch.com/~rsc/thread/)
+Your solution should be in the file `user/primes.c`
