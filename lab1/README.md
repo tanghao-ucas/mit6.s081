@@ -14,7 +14,7 @@ Your solution should be in the file `user/sleep.c`
 Write a program that uses UNIX system calls to "_ping-pong_" a byte between two processes over a pair of pipes, one for each direction.
 Here is the order:
 + _parent_ : send byte to child
-+ _child_  : read byte, print `\<pid\>: received ping`, write byte to parent
-+ _parent_ : read byte, print `\<pid\>: received pong`
++ _child_  : read byte, print `<pid>: received ping`, write byte to parent
++ _parent_ : read byte, print `<pid>: received pong`
 
 Your solution should be in the file `user/pingpong.c`
