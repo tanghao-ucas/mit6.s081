@@ -1,4 +1,5 @@
 # Lab 1: Xv6 and Unix utilities
+[Reference](https://pdos.csail.mit/edu/6.828/2021/labs/util.html)
 
 ## Boot xv6 (easy)
 follow the lab instruction
@@ -27,3 +28,12 @@ Write a concurrent version of prime sieve using pipes
 This idea is dut to Doug Mcllroy, inventor of Unix pipes, the explaination are from [Here](https://swtch.com/~rsc/thread/)
 
 Your solution should be in the file `user/primes.c`
+
+## find (moderate)
+Write a simple version of the UNIX find program:
+
++ find all the files in a directory tree with a specific name.
++ Use recursion to allow find to descend into sub-directories
++ Don't recurse into `.` and `..`
+
+Your solution should be in the file `user/find.c`
