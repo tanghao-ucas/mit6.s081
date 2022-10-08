@@ -33,7 +33,16 @@ Your solution should be in the file `user/primes.c`
 Write a simple version of the UNIX find program:
 
 + find all the files in a directory tree with a specific name.
-+ Use recursion to allow find to descend into sub-directories
-+ Don't recurse into `.` and `..`
++ use recursion to allow find to descend into sub-directories
++ don't recurse into `.` and `..`
 
 Your solution should be in the file `user/find.c`
+
+## xargs (moderate)
+Write a simple version of the UNIX xargs program:
+
++ read lines from the standard input
++ supply the line as additional argument to the new command
++ run a command for each line
+
+Your solution should be in the file `user/xargs.c`
