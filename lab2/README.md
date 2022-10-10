@@ -19,6 +19,6 @@ The line should contain:
 2. the name of the system call
 3. the return value
 
-For example: `<pid>: syscall <syscall_name> -> <return_value>
+For example: `<pid>: syscall <syscall_name> -> <return_value>`
 
 The `trace` system call should enable tracing for the process that calls it and any children that it subsequently forks, but should not affect other processes.
