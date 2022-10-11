@@ -1,5 +1,5 @@
 # Lab2: System calls
-[Reference](https://pdocs.csail.mit.edu/6.828/2021/labs/syscall.html)
+[Reference](https://pdos.csail.mit.edu/6.828/2021/labs/syscall.html)
 
 Preparation
 + xv6 book: 				Chapter 2, Section 4.3, Section 4.4
