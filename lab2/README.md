@@ -1,8 +1,10 @@
 # Lab2: System calls
+[Reference](https://pdocs.csail.mit.edu/6.828/2021/labs/syscall.html)
+
 Preparation
-+ xv6 book: 		Chapter 2, Section 4.3, Section 4.4
-+ user-space:		`user/user.h`, `user/usys.pl`
-+ kernel-space: 	`kernel/syscall.h`, `kernel/syscall.c`
++ xv6 book: 				Chapter 2, Section 4.3, Section 4.4
++ user-space:				`user/user.h`, `user/usys.pl`
++ kernel-space: 		`kernel/syscall.h`, `kernel/syscall.c`
 + process-related: 	`kernel/proc.h`, `kernel/proc.c`  
 
 ## system call tracing (moderate)
@@ -22,3 +24,12 @@ The line should contain:
 For example: `<pid>: syscall <syscall_name> -> <return_value>`
 
 The `trace` system call should enable tracing for the process that calls it and any children that it subsequently forks, but should not affect other processes.
+
+## sysinfo
+Add a system call `sysinfo` that collects infomation about the running system
+
+The system call takes one argument: a pointer to a `struct sysinfo`(see `kernel/sysinfo.h`)
+
+The kernel should fill out the field of this `struct sysinfo`:
++ `freemem`	: the number of byte of current free memory
++ `nproc`   : the number of processes whose `state` is not `UNUSED`
